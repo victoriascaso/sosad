@@ -1,0 +1,264 @@
+// ==============================================
+// HISTORIC
+// ==============================================
+
+// MENU
+#historic {
+	@extend .light;
+	margin: 50px 0;
+
+	.subtitle {
+		display: block;
+		margin: 10px 0;
+	}
+
+	select {
+		@extend .light;
+		padding: 5px 10px;
+		margin: 0 5px;
+	}
+}
+
+// STATS
+.stats-container {
+	margin: 25px auto;
+	width: 800px;
+	height: 400px;
+	max-height: 40vh;
+}
+
+// RESUME
+.resume-container {
+	padding: 20px 0;
+	text-align: center;
+
+	.user-message {
+		@extend .light;
+		font-size: 16px;
+		color: #aaa;
+
+		b {
+			font-weight: normal;
+			color: $blackTundora;
+		}
+
+		.user-container {
+			text-align: center;
+			margin: 10px auto;
+		}
+
+		.highlight-user {
+			@extend .bold;
+			color: $redFirebrick;
+			font-size: 30px;
+			text-decoration: none;
+
+			&:hover,
+			&:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.example-container {
+		@extend .light;
+		display: block;
+		margin: 10px auto;
+		width: 600px;
+		max-width: 90%;
+
+		a {
+			color: $blackTundora;
+			text-decoration: none;
+
+			&:hover,
+			&:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.others {
+		@extend .light;
+		margin: 20px auto;
+		font-size: 16px;
+		color: #aaa;
+		width: 50%;
+
+		ul {
+			display: inline-block;
+			margin-left: 5px;
+		}
+
+		li {
+			display: inline-block;
+			margin: 5px;
+		}
+
+		a {
+			color: $redFirebrick;
+		}
+	}
+}
+
+.table-container {
+	margin: 30px auto 170px;
+
+	th {
+		background: #f0f0f0;
+		padding: 15px;
+	}
+
+	td {
+		padding: 8px;
+
+		a {
+			color: $black;
+			text-decoration: none;
+
+			&:hover,
+			&:focus {
+				text-decoration: underline;
+			}
+
+			&.tweet-link {
+				font-size: 12px;
+				display: inline-block;
+				margin-left: 10px;
+				color: #999;
+
+				.fa {
+					font-size: 10px;
+					margin-left: 3px;
+				}
+			}
+		}
+	}
+
+	.num {
+		max-width: 90px;
+	}
+
+	table {
+		margin: 0 auto;
+	}
+
+}
+
+@include mobile {
+
+	// MENU
+	#historic {
+		margin: 20px 0;
+
+		.subtitle {
+			text-align: center;
+			font-size: 10px;
+		}
+
+	}
+
+	// STATS
+	.stats-container {
+		width: 90%;
+		height: 240px;
+	}
+
+	// RESUME
+	.resume-container {
+		padding: 0;
+
+		section {
+			padding: 10px;
+		}
+
+		.user-message {
+			font-size: 17px;
+
+			.highlight-user {
+				font-size: 34px;
+			}
+		}
+
+		.example-container {
+			font-size: 12px;
+		}
+
+	}
+
+	table {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	thead {
+		display: none;
+	}
+
+	tr {
+		td:first-child {
+			background: #f0f0f0;
+			font-weight: bold;
+			font-size: 1.3em;
+		}
+
+		td:last-child {
+			padding-bottom: 20px;
+		}
+	}
+
+	tbody td {
+		display: block;
+		text-align: center;
+	}
+
+	tbody td:before {
+		display: block;
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+
+	td:nth-of-type(2):before {
+		content: "Media tuits";
+	}
+
+	td:nth-of-type(3):before {
+		content: "Media tuits / mensual";
+	}
+
+	td:nth-of-type(4):before {
+		content: "Usuario que más odio ha propagado";
+	}
+
+	td:nth-of-type(5):before {
+		content: "Usuario que más odio ha recibido";
+	}
+
+	.table-container {
+
+		.num {
+			max-width: none;
+		}
+	}
+
+}
+
+@include ipadPortrait {
+
+	// STATS
+	.stats-container {
+		width: 90%;
+	}
+
+}
+
+@include mobile {
+
+	.resume-container {
+
+		.others {
+			width: 90%;
+		}
+	}
+}

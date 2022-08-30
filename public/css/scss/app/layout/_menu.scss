@@ -1,0 +1,67 @@
+// ==============================================
+// MENU
+// ==============================================
+
+$menuSize: 40px;
+
+.footer-container {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+#menu {
+
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+	padding: 10px;
+	background: #fff;
+
+	li {
+		display: inline-block;
+	}
+
+	li a {
+		width: $menuSize;
+		height: $menuSize;
+		background: $greySilver;
+		display: inline-block;
+		margin: 5px;
+		border-radius: 50%;
+
+		&.active,
+		&:hover,
+		&:focus {
+			background: $redFirebrick;
+		}
+
+		i {
+			color: $white;
+			position: relative;
+			top: 11px;
+			font-size: 17px;
+
+			&.fa-dashboard {
+				top: 9px;
+			}
+		}
+	}
+
+}
+
+// ==============================================
+// IPAD LANDSCAPE
+// ==============================================
+@include ipadLandscape {}
+
+// ==============================================
+// IPAD PORTRAIT
+// ==============================================
+@include ipadPortrait {}
+
+// ==============================================
+// MOBILE
+// ==============================================
+@include mobile {}

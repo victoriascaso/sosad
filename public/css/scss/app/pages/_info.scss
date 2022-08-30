@@ -1,0 +1,59 @@
+// ==============================================
+// INFO
+// ==============================================
+
+#info {
+	margin: 50px auto;
+	width: 600px;
+	max-width: 90%;
+	position: relative;
+	z-index: 99;
+
+	p,
+	li {
+		@extend .light;
+		font-size: 15px;
+		margin: 10px;
+		color: $blackTundora;
+		line-height: 1.2;
+	}
+
+	a:not(.button) {
+		color: $redFirebrick;
+		font-weight: bold;
+	}
+}
+
+#follow {
+	width: 100%;
+	margin-top: 20px;
+
+	a {
+		border-radius: 10px;
+		padding: 7px 15px;
+		margin-bottom: 10px;
+		background: $redFirebrick;
+		color: $white;
+		text-decoration: none;
+
+		svg {
+			width: 14px;
+			height: 14px;
+			fill: $white;
+			position: relative;
+			top: 2px;
+		}
+	}
+}
+
+@include mobile {
+
+	#info {
+		margin-top: 20px;
+
+		p,
+		li {
+			font-size: 13px;
+		}
+	}
+}

@@ -1,0 +1,108 @@
+{
+	"language": "es",
+	"index": "index",
+	"port": 8001,
+	"saveTweets": true,
+	"ignore_locations": [],
+	"ignore_accounts": [],
+	"ignore_foreign_expressions": [],
+	"ignore_user_descriptions": [],
+	"ignore_expressions": {
+		"comical": [
+			"jaja",
+			"haha",
+			"jeje",
+			"hehe",
+			"jiji",
+			"lol",
+			"de puta madre",
+			"xd",
+			"equisde"
+		],
+		"self": [
+			"soy",
+			"estoy",
+			"me pasa"
+		],
+		"specific": [
+			"querella criminal",
+			"ratatouille",
+			"han retrasado",
+			"hemos retrasado",
+			"he retrasado",
+			"habeis retrasado",
+			"has retrasado",
+			"ha retrasado",
+			"escuadrón suicida",
+			"se suicida",
+			"repelente de insectos",
+			"sientes inútil",
+			"siento inútil",
+			"siento un inútil",
+			"sería inútil",
+			"gasto inútil",
+			"dato inútil",
+			"a lo inútil",
+			"es inútil",
+			"casi inútil",
+			"novio",
+			"novia"
+		]
+	},
+	"hate_prefixes": [
+		"eres un",
+		"eres una",
+		"eres",
+		"sois",
+		"sois unas",
+		"sois unos",
+		"pedazo",
+		"pedazo de",
+		"trozo de",
+		"maldito",
+		"maldita",
+		"puto",
+		"puta",
+		"perro",
+		"el muy",
+		"la muy",
+		"los muy",
+		"las muy",
+		"de lo más",
+		"el más",
+		"la más",
+		"pinta de",
+		"jodido",
+		"jodida"
+	],
+	"track": [
+		{
+			"word": "maldita ansiedad",
+			"weight": 1
+		},
+		{
+			"word": "es triste",
+			"weight": 1
+		},
+		{
+			"word": "angustia",
+			"weight": 1
+		},
+		{
+			"word": "esta tristeza",
+			"weight": 1
+		},
+		{
+			"word": "mi depresión",
+			"weight": 1
+		},
+		{
+			"word": "quiero morir",
+			"weight": 1
+		},
+		{
+			"word": "llorar",
+			"weight": 1
+		}
+	]
+}

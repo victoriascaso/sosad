@@ -1,0 +1,33 @@
+// ==============================================
+// BUTTONS
+// ==============================================
+
+// Vars
+$btnMainBg: #ccc;
+$btnMainBorder: $white;
+$btnMainHoverBg: #ccc;
+$btnMainHoverBorder: #ccc;
+
+// GENERAL BUTTON
+.btn {
+  @extend .bold;
+  @include transition(all 0.2s ease);
+  background: $redFirebrick;
+  color: $white;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 6px 8px;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+}
+
+
+// ==============================================
+// MOBILE
+// ==============================================
+@include mobile {
+
+}

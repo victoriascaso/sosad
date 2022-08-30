@@ -1,0 +1,37 @@
+// ==============================================
+// FONTS
+// ==============================================
+
+// Mixin for fonts
+@mixin typo($t,$name) {
+	@font-face {
+		font-family: $name;
+		src: url('fonts/#{$t}.woff2') format('woff2'),
+		url('fonts/#{$t}.woff') format('woff'),;
+		font-weight: normal;
+		font-style: normal;
+	}
+}
+
+@include typo('Montserrat-Light', 'Montserrat Light');
+@include typo('Montserrat-Regular', 'Montserrat Regular');
+
+// List of fonts
+.light {
+	font-family: 'Montserrat Light', sans-serif;
+}
+
+.regular {
+  font-family: 'Monstserrat Regular', sans-serif;
+  font-weight: 400;
+}
+
+.bold {
+	font-family: 'Special Elite', sans-serif;
+	font-weight: 400;
+}
+
+.title {
+	font-family: 'Bahiana', sans-serif;
+	font-weight: 400;
+}

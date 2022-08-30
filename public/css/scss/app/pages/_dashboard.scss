@@ -1,0 +1,72 @@
+// ==============================================
+// DASHBOARD
+// ==============================================
+
+// Tweet
+.tweet {
+	@extend .light;
+	transition: background 0.3s ease;
+	display: block;
+	margin: 20px auto;
+	line-height: 1.2;
+	height: 80px;
+	max-width: 600px;
+	color: $blackTundora;
+	text-decoration: none;
+	padding: 20px;
+	height: auto;
+	border-radius: 10px;
+	position: relative;
+	background: #f9f9f9;
+	font-size: 14px;
+
+	b,
+	strong {
+		font-size: 16px;
+	}
+
+	&:hover,
+	&:focus {
+		background: #f0f0f0;
+	}
+
+	&#most_hateful_user_tweets {
+		margin-bottom: 0;
+	}
+
+	.user {
+		color: $redFirebrick;
+		font-weight: bold;
+	}
+}
+
+// Number of Tweets
+#number_tweets {
+
+	.num {
+		@extend .title;
+		font-size: 90px;
+		display: block;
+		margin: 20px auto 0;
+	}
+
+	.suffix {
+		@extend .light;
+		display: block;
+		font-size: 20px;
+		letter-spacing: -1px;
+		color: $greyDark;
+	}
+}
+
+// Real time graph
+#real_time_graph {
+
+	max-width: 100%;
+	overflow: hidden;
+	margin: 30px auto;
+
+	canvas {
+		margin: 0 auto;
+	}
+}

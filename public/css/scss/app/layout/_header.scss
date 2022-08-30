@@ -1,0 +1,67 @@
+// ==============================================
+// HEADER
+// ==============================================
+
+// Main header
+#header {
+	background: $redFirebrick;
+	padding: 5px 0;
+
+	h1 {
+		@extend .title;
+		color: $white;
+		font-size: 40px;
+
+		// Knife images
+		i {
+			display: inline-block;
+			background: url(../img/knife.png) no-repeat center center;
+			background-size: contain;
+			width: 40px;
+			height: 40px;
+			position: relative;
+			top: 4px;
+
+			&.left {
+				left: -10px;
+				transform-origin: bottom left;
+
+				&.active {
+					@include animation(0, .5s, stabLeft, 1, both);
+				}
+			}
+
+			&.right {
+				left: 10px;
+				background-image: url(../img/knife-reverse.png);
+				transform-origin: bottom right;
+
+				&.active {
+					@include animation(0, .5s, stabRight, 1, both);
+				}
+			}
+		}
+
+	}
+}
+
+// ==============================================
+// IPAD LANDSCAPE
+// ==============================================
+@include ipadLandscape {
+
+}
+
+// ==============================================
+// IPAD PORTRAIT
+// ==============================================
+@include ipadPortrait {
+
+}
+
+// ==============================================
+// MOBILE
+// ==============================================
+@include mobile {
+
+}

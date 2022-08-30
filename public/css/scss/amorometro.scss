@@ -1,0 +1,77 @@
+// ==============================================
+// AMOROMETRO
+// ==============================================
+// Custom styles just for amorometro website
+
+$red: #db332d;
+
+#header {
+	background: $red;
+
+	h1 {
+		font-family: 'Chewy';
+	}
+}
+
+footer {
+	background: $red;
+}
+
+.bold,
+.most_hated_user a,
+.resume-container .user-message .highlight-user,
+.btn,
+h1,
+h2,
+h3 {
+	font-family: 'Chewy',
+		cursive;
+}
+
+#menu li a {
+
+	&.active,
+	&:hover,
+	&:focus {
+		background: $red;
+	}
+
+}
+
+#number_tweets .num {
+	font-family: 'Chewy',
+		cursive;
+}
+
+.most_hated_user a {
+	color: $red;
+	letter-spacing: 1px;
+}
+
+#follow a {
+	background: $red;
+}
+
+#header {
+
+	h1 {
+
+		// Knife images
+		i {
+			display: inline-block;
+			background: url(../img/amorometro/heart.png) no-repeat center center;
+			background-size: contain;
+			width: 40px;
+			height: 40px;
+			position: relative;
+			top: 6px;
+
+			&.right {
+				background: url(../img/amorometro/heart.png) no-repeat center center;
+				background-size: contain;
+			}
+		}
+
+
+	}
+}
